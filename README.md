@@ -11,7 +11,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # lsioarmhf/sickbeard
-[![](https://images.microbadger.com/badges/image/lsioarmhf/sickbeard.svg)](http://microbadger.com/images/lsioarmhf/sickbeard "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/sickbeard.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/sickbeard.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-sickbeard)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-sickbeard/)
+[![](https://images.microbadger.com/badges/version/lsioarmhf/sickbeard.svg)](https://microbadger.com/images/lsioarmhf/sickbeard "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/sickbeard.svg)](http://microbadger.com/images/lsioarmhf/sickbeard "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/sickbeard.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/sickbeard.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-sickbeard)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-sickbeard/)
 [hub]: https://hub.docker.com/r/lsioarmhf/sickbeard/
 
 The ultimate PVR application that searches for and manages your TV shows
@@ -65,7 +65,16 @@ Web interface is at `<your-ip>:8081` , set paths for downloads, tv-shows to matc
 
 * To monitor the logs of the container in realtime `docker logs -f sickbeard`.
 
+* container version number 
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' sickbeard`
+
+* image version number
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' lsioarmhf/sickbeard`
+
 ## Versions
 
++ **14-10-16:** Add version layer information.
 + **11.09.16:** Add layer badges to README.
 + **07.09.16:** Initial Release.
