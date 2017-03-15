@@ -2,6 +2,8 @@
 [forumurl]: https://forum.linuxserver.io
 [ircurl]: https://www.linuxserver.io/irc/
 [podcasturl]: https://www.linuxserver.io/podcast/
+[appurl]: http://sickbeard.com/
+[hub]: https://hub.docker.com/r/lsioarmhf/sickbeard/
 
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
@@ -12,13 +14,12 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 
 # lsioarmhf/sickbeard
 [![](https://images.microbadger.com/badges/version/lsioarmhf/sickbeard.svg)](https://microbadger.com/images/lsioarmhf/sickbeard "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/sickbeard.svg)](http://microbadger.com/images/lsioarmhf/sickbeard "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/sickbeard.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/sickbeard.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-sickbeard)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-sickbeard/)
-[hub]: https://hub.docker.com/r/lsioarmhf/sickbeard/
 
 The ultimate PVR application that searches for and manages your TV shows
 Automatically finds new and old episodes for you and it works with your current download client!. Includes updated python ssl for newer sites like PTP etc.[Sickbeard](http://sickbeard.com/)
 
-[![sickbeard](http://wolfeden.ca/sickbeard_small.png)][sickurl]
-[sickurl]: http://sickbeard.com/
+[![sickbeard](http://wolfeden.ca/sickbeard_small.png)][appurl]
+
 ## Usage
 
 ```
